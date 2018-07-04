@@ -2,8 +2,6 @@ package com.yao.tool.util;
 
 import java.io.*;
 import java.nio.file.Files;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -110,10 +108,10 @@ public class FileUtils {
         } else {
             System.out.println("文件不存在!");
         }
-        return new ArrayList<>(lists);
+        return new ArrayList<String>(lists);
     }
     public static List<String> traverseFolder(String path) {
-        return traverseFolderWithTreeSet(path,new TreeSet<>(),path);
+        return traverseFolderWithTreeSet(path,new TreeSet<String>(),path);
     }
 
     public static String deployFile(String outPutPath, String tomcatFilePathTxtText, String logPath) {
