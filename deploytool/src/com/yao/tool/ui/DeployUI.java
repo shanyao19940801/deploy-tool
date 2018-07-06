@@ -102,16 +102,16 @@ public class DeployUI extends JFrame{
         getContentPane().add(this.backupFilePathBtn);
         this.backupFilePathBtn.setBounds(490, 92, 21, 23);
 
-        this.deployBtn.setText("处理");
+        this.deployBtn.setText("开始升级");
         this.deployBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
                 DeployUI.this.deployBtnActionPerformed(evt);
             }
         });
         getContentPane().add(this.deployBtn);
-        this.deployBtn.setBounds(200, 140, 60, 23);
+        this.deployBtn.setBounds(230, 140, 100, 23);
 
-        this.deployEndBtn.setText("部署完毕");
+        /*this.deployEndBtn.setText("部署完毕");
         this.deployEndBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
                 DeployUI.this.deployEndBtnActionPerformed(evt);
@@ -119,7 +119,7 @@ public class DeployUI extends JFrame{
 
         });
         getContentPane().add(this.deployEndBtn);
-        this.deployEndBtn.setBounds(280, 140, 80, 23);
+        this.deployEndBtn.setBounds(280, 140, 80, 23);*/
         pack();
     }
 
