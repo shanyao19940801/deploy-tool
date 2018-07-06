@@ -26,7 +26,7 @@ public class StartUI extends JFrame {
         });
 
         getContentPane().add(this.deployBtn);
-        this.deployBtn.setBounds(100, 140, 100, 23);
+        this.deployBtn.setBounds(100, 40, 100, 23);
 
 
         this.updateBtn.setText("升级");
@@ -37,7 +37,7 @@ public class StartUI extends JFrame {
             }
         });
         getContentPane().add(this.updateBtn);
-        this.updateBtn.setBounds(200, 140, 100, 23);
+        this.updateBtn.setBounds(230, 40, 100, 23);
     }
 
     private void showDeployPackageUI(ActionEvent evt) {
