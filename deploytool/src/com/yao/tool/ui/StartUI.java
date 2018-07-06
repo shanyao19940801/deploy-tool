@@ -1,5 +1,7 @@
 package com.yao.tool.ui;
 
+import com.yao.tool.util.GuiTools;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -9,6 +11,12 @@ public class StartUI extends JFrame {
     private JButton updateBtn;
 
     public StartUI() {
+        init();
+        GuiTools.setWindowsLookAndFeel(this);
+        GuiTools.makeCenter(this);
+    }
+
+    public void init() {
         this.deployBtn = new JButton();
         this.updateBtn = new JButton();
 
@@ -38,6 +46,7 @@ public class StartUI extends JFrame {
         });
         getContentPane().add(this.updateBtn);
         this.updateBtn.setBounds(230, 40, 100, 23);
+
     }
 
     private void showDeployCodeUI(ActionEvent evt) {

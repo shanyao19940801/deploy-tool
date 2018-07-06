@@ -1,9 +1,6 @@
 package com.yao.tool.ui;
 
-import com.yao.tool.util.Constants;
-import com.yao.tool.util.FieldUtil;
-import com.yao.tool.util.FileUtils;
-import com.yao.tool.util.Log;
+import com.yao.tool.util.*;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -28,6 +25,8 @@ public class UpgradeUI extends JFrame{
 
     public UpgradeUI() {
         initComponents();
+        GuiTools.setWindowsLookAndFeel(this);
+        GuiTools.makeCenter(this);
     }
     private void initComponents() {
         this.logFileLabel = new JLabel();
