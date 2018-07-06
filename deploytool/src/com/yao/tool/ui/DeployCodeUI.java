@@ -52,7 +52,7 @@ public class DeployCodeUI extends javax.swing.JFrame {
         this.deployEndBtn = new JButton();
         this.chkSuorceFiles = new JCheckBox();
 
-        setDefaultCloseOperation(3);
+//        setDefaultCloseOperation(3);
         setTitle("项目部署工具");
         setMinimumSize(new java.awt.Dimension(550, 230));
         setResizable(false);

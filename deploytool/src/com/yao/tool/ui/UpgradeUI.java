@@ -13,7 +13,7 @@ import java.io.FileNotFoundException;
 import java.util.List;
 import java.util.logging.Logger;
 
-public class DeployUI extends JFrame{
+public class UpgradeUI extends JFrame{
     private JTextField tomcatFilePathTxt;
     private JTextField outCompileFilePathTxt;
     private JTextField backupFilePathTxt;
@@ -26,7 +26,7 @@ public class DeployUI extends JFrame{
     private JButton deployBtn;
     private JButton deployEndBtn;
 
-    public DeployUI() {
+    public UpgradeUI() {
         initComponents();
     }
     private void initComponents() {
@@ -42,7 +42,7 @@ public class DeployUI extends JFrame{
         this.deployBtn = new JButton();
         this.deployEndBtn = new JButton();
 
-        setDefaultCloseOperation(3);
+//        setDefaultCloseOperation(3);
         setTitle("项目升级工具");
         setMinimumSize(new java.awt.Dimension(550, 230));
         setResizable(false);
@@ -78,7 +78,7 @@ public class DeployUI extends JFrame{
         this.logFilePathBtn.setText("...");
         this.logFilePathBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
-                DeployUI.this.logFilePathBtnActionPerformed(evt);
+                UpgradeUI.this.logFilePathBtnActionPerformed(evt);
             }
         });
         getContentPane().add(this.logFilePathBtn);
@@ -87,7 +87,7 @@ public class DeployUI extends JFrame{
         this.outCompileFilePathBtn.setText("...");
         this.outCompileFilePathBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
-                DeployUI.this.outCompileFilePathBtnActionPerformed(evt);
+                UpgradeUI.this.outCompileFilePathBtnActionPerformed(evt);
             }
         });
         getContentPane().add(this.outCompileFilePathBtn);
@@ -96,7 +96,7 @@ public class DeployUI extends JFrame{
         this.backupFilePathBtn.setText("...");
         this.backupFilePathBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
-                DeployUI.this.deployFilePathBtnActionPerformed(evt);
+                UpgradeUI.this.deployFilePathBtnActionPerformed(evt);
             }
         });
         getContentPane().add(this.backupFilePathBtn);
@@ -105,7 +105,7 @@ public class DeployUI extends JFrame{
         this.deployBtn.setText("开始升级");
         this.deployBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
-                DeployUI.this.deployBtnActionPerformed(evt);
+                UpgradeUI.this.deployBtnActionPerformed(evt);
             }
         });
         getContentPane().add(this.deployBtn);
@@ -114,7 +114,7 @@ public class DeployUI extends JFrame{
         /*this.deployEndBtn.setText("部署完毕");
         this.deployEndBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
-                DeployUI.this.deployEndBtnActionPerformed(evt);
+                UpgradeUI.this.deployEndBtnActionPerformed(evt);
             }
 
         });
@@ -125,7 +125,7 @@ public class DeployUI extends JFrame{
 
     public static void main(String[] args)
     {
-        new DeployUI().setVisible(true);
+        new UpgradeUI().setVisible(true);
     }
 
     private void deployEndBtnActionPerformed(ActionEvent evt) {
@@ -182,12 +182,12 @@ public class DeployUI extends JFrame{
                 }
             } catch (FileNotFoundException ex) {
                 this.deployBtn.setVisible(true);
-                Logger.getLogger(DeployUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+                Logger.getLogger(UpgradeUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
                 JOptionPane.showMessageDialog(null, ex.getMessage(), "提示", 1);
             }
             catch (java.io.IOException ex) {
                 this.deployBtn.setVisible(true);
-                Logger.getLogger(DeployUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+                Logger.getLogger(UpgradeUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
                 JOptionPane.showMessageDialog(null, ex.getMessage(), "提示", 1);
             }
             finally {

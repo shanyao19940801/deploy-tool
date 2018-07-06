@@ -46,7 +46,7 @@ public class StartUI extends JFrame {
     }
 
     private void showDeployUI() {
-        DeployUI ui = new DeployUI();
+        UpgradeUI ui = new UpgradeUI();
         ui.setVisible(true);
     }
 
