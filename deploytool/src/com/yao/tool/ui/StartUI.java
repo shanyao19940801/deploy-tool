@@ -21,7 +21,7 @@ public class StartUI extends JFrame {
         this.deployBtn.setText("生成部署包");
         this.deployBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
-                StartUI.this.showDeployPackageUI(evt);
+                StartUI.this.showDeployCodeUI(evt);
             }
         });
 
@@ -40,9 +40,9 @@ public class StartUI extends JFrame {
         this.updateBtn.setBounds(230, 40, 100, 23);
     }
 
-    private void showDeployPackageUI(ActionEvent evt) {
-        DeployPackageUI deployPackageUI = new DeployPackageUI();
-//        deployPackageUI.
+    private void showDeployCodeUI(ActionEvent evt) {
+        DeployCodeUI deployCodeUI = new DeployCodeUI();
+        deployCodeUI.setVisible(true);
     }
 
     private void showDeployUI() {
