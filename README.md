@@ -16,10 +16,10 @@
 ## 主要功能
 
 * 生成部署发布包
-  这个工具主要功能是根据SVN的log生成一个发布包，详情：[使用说明]()
+  这个工具主要功能是根据SVN的log生成一个发布包，详情：[使用说明](https://github.com/shanyao19940801/deploy-tool/blob/master/deploy.md)
 
 * 升级代码
-  基于上面生成的发布包，到生产环境通过此工具完成升级，并自动备份，以及log打印，详情：[使用说明]()
+  基于上面生成的发布包，到生产环境通过此工具完成升级，并自动备份，以及log打印，详情：[使用说明](https://github.com/shanyao19940801/deploy-tool/blob/master/upgrade.md)
 
 ## 下载地址
 
