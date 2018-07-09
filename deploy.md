@@ -4,7 +4,7 @@
 
 ## 功能
 
-本部署工具是基于SVN提交log生成增量部署包。
+本部署工具是基于SVN提交log生成**增量部署**包。
 
 ## 使用教程
 1. 下载后解压，如下图，点击bat文件
@@ -14,9 +14,9 @@
 ![](https://github.com/shanyao19940801/deploy-tool/blob/master/deploytool/piecture/deploy2.png)
 * svn日志如下图所示部分，粘贴复制到txt文档中就可以了
 ![](https://github.com/shanyao19940801/deploy-tool/blob/master/deploytool/piecture/deploy3.png)
-* 编译输出日志
+* 编译输出路劲
 ![](https://github.com/shanyao19940801/deploy-tool/blob/master/deploytool/piecture/deploy4.png)
-4. 啊啊
+4. 点击处理即可
 
 
 
