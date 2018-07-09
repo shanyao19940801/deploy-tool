@@ -8,10 +8,14 @@
 
 ## 使用教程
 1. 下载后解压，如下图，点击bat文件
-![]()
+![](https://github.com/shanyao19940801/deploy-tool/blob/master/deploytool/piecture/deploy01.JPG)
 2. 点击生成部署包
-3. 按章如下方式填写
-![]()
+3. 按如下方式填写
+![](https://github.com/shanyao19940801/deploy-tool/blob/master/deploytool/piecture/deploy2.png)
+* svn日志如下图所示部分，粘贴复制到txt文档中就可以了
+![](https://github.com/shanyao19940801/deploy-tool/blob/master/deploytool/piecture/deploy3.png)
+* 编译输出日志
+![](https://github.com/shanyao19940801/deploy-tool/blob/master/deploytool/piecture/deploy4.png)
 4. 啊啊
 
 
